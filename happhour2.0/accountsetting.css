@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Gurajada&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-image: url(bokeh.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: black;
+    width: 100%;
+    height: 100%;
+    position: relative;    
+}
+  
+.page-title{
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.settings-page{
+    padding-top: 90px;
+    padding-bottom: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.25rem;
+    line-height: 130%;
+    
+}
+  
+.settings-container{
+    padding: 10px;
+    background-color: white;
+    border-radius: 0px;
+    display: flex;
+    flex-direction: column;
+}
+  
+.settings-title {
+    background-color: white;
+    font-weight: bold;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    font-size: 15px;
+    margin-bottom: 10px;
+    position: relative;
+    font-family: 'Times New Roman', serif;
+    border: none; 
+}
+  
+.settings-title::before{
+    content: '+';
+    position: absolute;
+    top: 50%;
+    right: 5px;
+    transform: translateY(-50%);
+    font-size: 1.5em;
+}
+  
+.active.settings-title::before{
+    content: '-';
+}
+  
+.active, .settings-title:hover{
+    background-color: black;
+    color:white;
+}
+  
+.form{
+    padding: 0 18px;
+    background-color: #ebebeb;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    margin-bottom: 5px;
+    font-family: 'Times New Roman', serif;
+    font-weight: bold;
+    font-size: 15px;
+}
+  
+.btn{
+    cursor: pointer;
+    background-color: lightgray;
+}
+  
+/*sidebar*/
+.sidebar {
+  height: 100%;
+  width: 150px;
+  position: fixed;
+  right: 0;
+  top: 0;
+  background-color: #eeeeeb;
+  overflow-x: hidden;
+  padding-top: 80px;
+  z-index: 1;
+}
+
+.sidebar a {
+  padding: 8px 8px 3px 15px;
+  margin: 0;
+  display: flex;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  align-items: center;
+  justify-content: space-between;
+  font-family: 'Gurajada', serif;  
+  }
+
+a:hover{
+  color: #5334dd;
+}
+
+.closeBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+}
+
+.openBtn {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  font-size: 30px; 
+  cursor: pointer;
+}
+
+.logoutBtn{
+  padding: 4px 4px;
+  position: absolute;
+  color: black;
+  font-size: 13px;
+  margin-top: 15px;
+  margin-left: 40px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+/*solid line divider*/
+hr.solid {
+  border-top: 1px solid lightgray;
+  margin: 0;
+}
+
+/*icon*/
+.fas
+{
+color: #AFA398;
+}
+
+nav a {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: 'Palanquin Dark', sans-serif;
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  opacity: 0.8;
+}
+
+@media screen and (max-width: 600px) {
+  nav .sidebarBtn{
+      display: flex;
+  }
+  nav .navLinks{
+      display: none;
+  }
+}
+
+
+/*Footer*/
+.footer{
+  padding: 100px 15%;
+  display: flex;
+  color: white;
+  background-color: black;
+}
+
+.footer div{
+  text-align: center;
+}
+
+.contact{
+  flex-grow: 2;
+}
+
+.footer div h3{
+  font-weight: 300;
+  margin-bottom: 30px;
+  letter-spacing: 1px;
+  color: #5334dd;
+  font-family: 'Gurajada', serif;  
+}
+
+.siteLinks a{
+  display: block;
+  text-decoration: none;
+  color: white;
+  font-family: 'Gurajada', serif;  
+  font-size: 20px;
+}
+
+.contact p{
+  display: block;
+}
+
+.socials i{
+  font: 20px;
+  margin: 5px;
+  cursor: pointer;
+  color: white;
+}
+
+.copyright{
+  color: white;
+  display: flex;
+  justify-content: center;
+  background-color: #5334dd;
+  font-family: 'Gurajada', serif;  
+  font-size: 20px;
+
+}
+
+.socials a:link{
+  font-size: 20px;
+  display: inline-block;    
+}
